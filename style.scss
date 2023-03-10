@@ -682,85 +682,90 @@ body{
             }
         }
     }
-    .footer__elements{
-        margin-top: 72px;
-        height: 303px;
+    footer{
         background-image: url(images/BackgroundFooter.svg);
-        display: flex;
-        justify-content: space-between;
-        padding: 57px 113px 0px;
-        color: white;
-        &__cards{
-            max-width: 283px;
-            margin-right: 12px;
-            &__section{
-                justify-content: space-between;
-                width: 180px;
-                display: flex;
-                margin-left: 7px;
-            }
-            h1{
-                font-size: 2.3rem;
-                font-weight: 400;
-                margin-bottom: 15px;
-            }
-            p{
-                font-size: 0.8rem;
-                margin-bottom: 42px;
-            }
-            
-        }
-        ul{
-            list-style: none;
-            padding-left: 0px;
-            margin-top: 23px;
-            margin-bottom: 0px;
-            font-size: 1rem;
-
-            li{
-                &:first-child{
-                    margin: 19px 0px 22px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .footer__elements{
+            margin: auto;
+            max-width: 1728px;
+            margin-top: 72px;
+            height: 303px;
+            display: flex;
+            justify-content: space-between;
+            padding: 57px 113px 0px;
+            color: white;
+            &__cards{
+                max-width: 283px;
+                margin-right: 12px;
+                &__section{
+                    justify-content: space-between;
+                    width: 180px;
+                    display: flex;
+                    margin-left: 7px;
                 }
-                margin-bottom: 15px;
-            }
-
-        }
-        &__cards.subscribe_us{
-            max-width: 365px;
-            width: 468px;
-
-            p{
-                font-size: 1rem;
-                margin-top: 40px;
-                margin-bottom: 27px;
-            }
-            &>div{
-                display: flex;
-                input{
-                    height: 53px;
-                    width: 227px;
-                    background-color: transparent;
-                    color: white;
-                    border: 1px solid white;
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
-                    padding: 0px 0px 0px 23px;
-    
-                    &::placeholder{
-                        color: white;
-                    }
+                h1{
+                    font-size: 2.3rem;
+                    font-weight: 400;
+                    margin-bottom: 15px;
                 }
-                button{
-                    background-color: #64A5CA;
-                    height: 55px;
-                    padding: 0px 18px;
-                    border: none;
-                    border-top-right-radius: 9px;
-                    border-bottom-right-radius: 9px;
+                p{
+                    font-size: 0.8rem;
+                    margin-bottom: 42px;
+                }
                 
+            }
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                margin-top: 23px;
+                margin-bottom: 0px;
+                font-size: 1rem;
+
+                li{
+                    &:first-child{
+                        margin: 19px 0px 22px;
+                    }
+                    margin-bottom: 15px;
+                }
+
+            }
+            &__cards.subscribe_us{
+                max-width: 365px;
+                width: 468px;
+
+                p{
+                    font-size: 1rem;
+                    margin-top: 40px;
+                    margin-bottom: 27px;
+                }
+                &>div{
+                    display: flex;
+                    input{
+                        height: 53px;
+                        width: 227px;
+                        background-color: transparent;
+                        color: white;
+                        border: 1px solid white;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        padding: 0px 0px 0px 23px;
+        
+                        &::placeholder{
+                            color: white;
+                        }
+                    }
+                    button{
+                        background-color: #64A5CA;
+                        height: 55px;
+                        padding: 0px 18px;
+                        border: none;
+                        border-top-right-radius: 9px;
+                        border-bottom-right-radius: 9px;
+                    
+                    }
                 }
             }
         }
     }
-
 }

@@ -613,60 +613,66 @@ body .main__elements__fifth__cards__elements__sixth p {
   max-width: 332px;
   margin-bottom: 30px;
 }
-body .footer__elements {
+body footer {
+  background-image: url(images/BackgroundFooter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body footer .footer__elements {
+  margin: auto;
+  max-width: 1728px;
   margin-top: 72px;
   height: 303px;
-  background-image: url(images/BackgroundFooter.svg);
   display: flex;
   justify-content: space-between;
   padding: 57px 113px 0px;
   color: white;
 }
-body .footer__elements__cards {
+body footer .footer__elements__cards {
   max-width: 283px;
   margin-right: 12px;
 }
-body .footer__elements__cards__section {
+body footer .footer__elements__cards__section {
   justify-content: space-between;
   width: 180px;
   display: flex;
   margin-left: 7px;
 }
-body .footer__elements__cards h1 {
+body footer .footer__elements__cards h1 {
   font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 15px;
 }
-body .footer__elements__cards p {
+body footer .footer__elements__cards p {
   font-size: 0.8rem;
   margin-bottom: 42px;
 }
-body .footer__elements ul {
+body footer .footer__elements ul {
   list-style: none;
   padding-left: 0px;
   margin-top: 23px;
   margin-bottom: 0px;
   font-size: 1rem;
 }
-body .footer__elements ul li {
+body footer .footer__elements ul li {
   margin-bottom: 15px;
 }
-body .footer__elements ul li:first-child {
+body footer .footer__elements ul li:first-child {
   margin: 19px 0px 22px;
 }
-body .footer__elements__cards.subscribe_us {
+body footer .footer__elements__cards.subscribe_us {
   max-width: 365px;
   width: 468px;
 }
-body .footer__elements__cards.subscribe_us p {
+body footer .footer__elements__cards.subscribe_us p {
   font-size: 1rem;
   margin-top: 40px;
   margin-bottom: 27px;
 }
-body .footer__elements__cards.subscribe_us > div {
+body footer .footer__elements__cards.subscribe_us > div {
   display: flex;
 }
-body .footer__elements__cards.subscribe_us > div input {
+body footer .footer__elements__cards.subscribe_us > div input {
   height: 53px;
   width: 227px;
   background-color: transparent;
@@ -676,10 +682,10 @@ body .footer__elements__cards.subscribe_us > div input {
   border-bottom-left-radius: 10px;
   padding: 0px 0px 0px 23px;
 }
-body .footer__elements__cards.subscribe_us > div input::placeholder {
+body footer .footer__elements__cards.subscribe_us > div input::placeholder {
   color: white;
 }
-body .footer__elements__cards.subscribe_us > div button {
+body footer .footer__elements__cards.subscribe_us > div button {
   background-color: #64A5CA;
   height: 55px;
   padding: 0px 18px;
