@@ -504,6 +504,7 @@ body .main__elements__fifth {
   background-image: url("images/Weather-report.svg");
   margin: 190px auto 126px;
   background-position: 38% 38%;
+  background-repeat: no-repeat;
   padding-bottom: 100px;
 }
 body .main__elements__fifth h1 {
