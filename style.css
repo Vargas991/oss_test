@@ -20,12 +20,21 @@ body .header__container {
 }
 @media screen and (max-width: 1024px) {
   body .header__container {
-    padding: 20px 60px;
+    padding: 20px 60px 24px;
   }
 }
 @media screen and (max-width: 768px) {
   body .header__container {
     padding: 20.8px 14px;
+  }
+}
+body .header__container .mobile-more {
+  margin-right: 7px;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  body .header__container .mobile-more {
+    display: block;
   }
 }
 body .header__container__logo {
@@ -41,6 +50,42 @@ body .header__container__logo {
     margin-top: 0rem;
     max-width: 120px;
     margin-left: 0rem;
+  }
+}
+body .header__container__logo img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  body .header__container__logo img {
+    margin-left: 0.4rem;
+  }
+}
+body .header__container__logo__mobile {
+  position: absolute;
+  background-color: #F8F9FB;
+  right: 0px;
+  top: 72px;
+  border-left: 1px solid #EAEBF0;
+  border-bottom: 1px solid #EAEBF0;
+  border-right: 1px solid #EAEBF0;
+}
+body .header__container__logo__mobile ul {
+  list-style: none;
+  padding-left: 0px;
+  padding: 15px 20px;
+  width: 150px;
+}
+body .header__container__logo__mobile ul li {
+  padding: 10px 0px;
+  font-size: 15px;
+  font-weight: 600;
+}
+body .header__container__logo__mobile ul li img {
+  padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  body .header__container__logo__mobile {
+    top: 65px;
   }
 }
 body .header__container__list {
@@ -63,6 +108,11 @@ body .header__container__list li:nth-child(3) {
 body .header__container__list li:nth-child(3) img {
   padding-left: 16px;
 }
+@media screen and (max-width: 1024px) {
+  body .header__container__list {
+    display: none;
+  }
+}
 body .header__container__login {
   display: flex;
   flex-direction: row;
@@ -70,6 +120,11 @@ body .header__container__login {
   align-items: center;
   padding: 0px;
   gap: 24px;
+}
+@media screen and (max-width: 1024px) {
+  body .header__container__login {
+    display: none;
+  }
 }
 body .header__container__login p {
   font-style: normal;
@@ -96,6 +151,16 @@ body .main__container__first {
   max-width: 1280px;
   margin: auto;
 }
+@media screen and (max-width: 1024px) {
+  body .main__container__first {
+    padding: 45px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .main__container__first {
+    padding: 45px 30px 65px;
+  }
+}
 body .main__container__first h5 {
   color: #437EF7;
   font-size: 14px;
@@ -111,6 +176,18 @@ body .main__container__first h1 {
   color: #272D37;
   margin-top: -4px;
 }
+@media screen and (max-width: 1024px) {
+  body .main__container__first h1 {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  body .main__container__first h1 {
+    font-size: 35px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+}
 body .main__container__first h1 span {
   margin-left: -10px;
 }
@@ -122,6 +199,16 @@ body .main__container__second {
 @media screen and (max-width: 1024px) {
   body .main__container__second {
     padding: 48px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .main__container__second {
+    padding: 48px 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  body .main__container__second {
+    padding: 48px 16px;
   }
 }
 body .main__container__second__cards {
@@ -149,7 +236,7 @@ body .main__container__second__cards__one p {
 }
 @media screen and (max-width: 1200px) {
   body .main__container__second__cards__one p {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 }
 body .main__container__second__cards__one span {
@@ -174,9 +261,20 @@ body .main__container__second__cards__two__card {
   display: flex;
   gap: 24px;
 }
+@media screen and (max-width: 425px) {
+  body .main__container__second__cards__two__card {
+    flex-direction: column;
+  }
+}
 body .main__container__second__cards__two__card img {
   width: 188px;
   height: 118px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__second__cards__two__card img {
+    width: 100%;
+    height: 100%;
+  }
 }
 body .main__container__second__cards__two__card h3 {
   font-weight: 600;
@@ -184,6 +282,13 @@ body .main__container__second__cards__two__card h3 {
   letter-spacing: -0.01em;
   color: #272D37;
   margin: 0px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__second__cards__two__card h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
 }
 body .main__container__second__cards__two__card p {
   font-weight: 400;
@@ -223,6 +328,14 @@ body .main__container__third__info h1 {
   color: #FFFFFF;
   margin-top: -1px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__third__info h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
 }
 body .main__container__third__info p {
   font-weight: 400;
@@ -292,6 +405,11 @@ body .main__container__third__submit span {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__third {
+    padding: 48px 16px;
+  }
+}
 body .main__container__fourth {
   padding: 64px 112px;
   display: flex;
@@ -309,6 +427,11 @@ body .main__container__fourth {
   body .main__container__fourth {
     padding: 48px 32px;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  body .main__container__fourth {
+    padding: 48px 16px;
   }
 }
 body .main__container__fourth h1 {
@@ -356,7 +479,7 @@ body .main__container__fourth__cards a {
   display: flex;
 }
 body .main__container__fourth__cards a img {
-  margin: 4px 0px 5px 8px;
+  margin: 0px 0px 5px 8px;
 }
 @media screen and (max-width: 1440px) {
   body .main__container__fourth__cards {
@@ -408,6 +531,14 @@ body .main__container__fifth h1 {
     max-width: 600px;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__fifth h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+}
 body .main__container__fifth button {
   padding: 12px 18px;
   margin-top: 1.5rem;
@@ -431,6 +562,11 @@ body .main__container__fifth button {
     gap: 30px;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__fifth {
+    padding: 48px 16px;
+  }
+}
 body .footer__container {
   padding: 66px 112px;
   display: flex;
@@ -442,6 +578,16 @@ body .footer__container {
     padding: 64px 60px;
   }
 }
+@media screen and (max-width: 865px) {
+  body .footer__container {
+    padding: 64px 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  body .footer__container {
+    padding: 48px 16px;
+  }
+}
 body .footer__container__logo {
   display: flex;
   flex-direction: row;
@@ -451,8 +597,21 @@ body .footer__container__logo {
   margin-bottom: 4rem;
   height: 244px;
 }
+@media screen and (max-width: 768px) {
+  body .footer__container__logo {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
 body .footer__container__logo__info {
   margin-top: 6px;
+}
+@media screen and (max-width: 768px) {
+  body .footer__container__logo__info {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 0.3rem;
+  }
 }
 body .footer__container__logo__info__submit {
   display: flex;
@@ -464,6 +623,11 @@ body .footer__container__logo__info__submit input {
   background: #2C3444;
   border: 1px solid #2E3545;
   border-radius: 6px 0px 0px 6px;
+}
+@media screen and (max-width: 768px) {
+  body .footer__container__logo__info__submit input {
+    width: 80%;
+  }
 }
 body .footer__container__logo__info__submit button {
   padding: 12px 18px;

@@ -18,13 +18,19 @@ body{
         border-bottom: 1px solid #EAEBF0;
 
         @media screen and (max-width: 1024px){
-            padding: 20px 60px;
+            padding: 20px 60px 24px;
         }
 
         @media screen and (max-width: 768px){
             padding: 20.8px 14px
         }
-        
+        .mobile-more{
+            margin-right: 7px;
+            display: none;
+            @media screen and (max-width: 1024px){
+                display: block;
+            }
+        }
         &__logo{
             display: flex;
             flex-direction: row;
@@ -38,6 +44,42 @@ body{
                 max-width: 120px;
                 margin-left: 0rem;
             }
+
+            img{
+                width: 100%;
+                @media screen and (max-width: 768px){
+                    margin-left: 0.4rem;
+                }
+            }
+        &__mobile{
+            position: absolute;
+            background-color: #F8F9FB;
+            right: 0px;
+            top: 72px;
+            border-left: 1px solid #EAEBF0;
+            border-bottom: 1px solid #EAEBF0;
+            border-right: 1px solid #EAEBF0;
+
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                padding: 15px 20px;
+                width: 150px;
+                li{
+                    padding: 10px 0px;
+                    font-size:15px;
+                    font-weight: 600;
+
+                    img{
+                        padding-left: 20px;
+                    }
+                }
+            }
+            @media screen and (max-width:768px){
+                top: 65px;
+            }
+        }
+        
         }
         &__list{
             list-style: none;
@@ -59,6 +101,9 @@ body{
                     padding-left: 16px;
                 }
             }
+            @media screen and (max-width:1024px){
+                display: none;
+            }
         }
         &__login{
             display: flex;
@@ -68,6 +113,9 @@ body{
             padding: 0px;
             gap: 24px;
 
+            @media screen and (max-width: 1024px){
+                display: none;
+            }
             p{
                 font-style: normal;
                 font-weight: 600;
@@ -97,6 +145,12 @@ body{
             max-width: 1280px;
             margin: auto;
 
+            @media screen and (max-width: 1024px){
+                padding: 45px 60px;
+            }
+            @media screen and (max-width: 768px){
+                padding: 45px 30px 65px;
+            }
             h5{
                 color: #437EF7;
                 font-size: 14px;
@@ -111,7 +165,14 @@ body{
                 max-width: 580px;
                 color: #272D37;
                 margin-top: -4px;
-
+                @media screen and (max-width: 1024px){
+                    margin-top: 1rem;
+                }
+                @media screen and (max-width: 425px){
+                    font-size: 35px;
+                    line-height: 44px;
+                    letter-spacing: -0.02em;
+                }
                 span{
                     margin-left: -10px;
                 }
@@ -125,7 +186,12 @@ body{
             @media screen and (max-width: 1024px){
                 padding: 48px 60px;
             }
-
+            @media screen and (max-width: 768px){
+                padding: 48px 32px;
+            }
+            @media screen and (max-width: 425px){
+                padding: 48px 16px;
+            }
             &__cards{
                 display: flex;
                 gap: 40px;
@@ -148,7 +214,7 @@ body{
                         letter-spacing: -0.1px;
                         color: #5F6D7E;
                         @media screen and (max-width:1200px){
-                            margin-bottom: 24px;
+                            margin-bottom: 18px;
                          }
                     }
                     span{
@@ -170,9 +236,16 @@ body{
                     &__card{
                         display: flex;
                         gap: 24px;
+                        @media screen and (max-width: 425px){
+                            flex-direction: column;
+                        }
                         img{
                             width: 188px;
                             height: 118px;
+                            @media screen and (max-width: 425px){
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                         h3{
                             font-weight: 600;
@@ -180,6 +253,11 @@ body{
                             letter-spacing: -0.01em;
                             color: #272D37;
                             margin: 0px;
+                            @media screen and (max-width: 425px){
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: -0.02em;
+                            }
                         }
                         p{
                             font-weight: 400;
@@ -220,6 +298,13 @@ body{
                     color: #FFFFFF;
                     margin-top:-1px;
                     margin-bottom: 24px;
+                    @media screen and (max-width: 425px){
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 36px;
+                        letter-spacing: -0.02em;
+
+                    }
                 }
                 p{
                     font-weight: 400;
@@ -287,6 +372,9 @@ body{
             @media screen and (max-width: 920px){
                 flex-direction: column;
             }
+            @media screen and (max-width: 425px){
+                padding: 48px 16px;
+            }
         }
         &__fourth{
             padding: 64px 112px;
@@ -302,6 +390,9 @@ body{
             @media screen and (max-width: 767px){
                 padding: 48px 32px;
                 gap: 30px;
+            }
+            @media screen and (max-width: 425px){
+                padding: 48px 16px;
             }
             h1{
                 margin: auto;
@@ -348,7 +439,7 @@ body{
                     display: flex;
 
                     img{
-                        margin: 4px 0px 5px 8px;
+                        margin: 0px 0px 5px 8px;
                     }
                 }
                 @media screen and (max-width:1440px){
@@ -374,7 +465,6 @@ body{
             align-items: center;
             gap: 7px;
             background-color: #2B63D9;
-
             h5{
                 color: #fff;
                 font-size: 14px;
@@ -394,6 +484,12 @@ body{
                  @media screen and (max-width: 1024px){
                     max-width: 600px;
                  }
+                 @media screen and (max-width: 425px){
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                    letter-spacing: -0.02em;
+                }
             }
             button{
                 padding: 12px 18px;
@@ -414,6 +510,9 @@ body{
                 padding: 64px 60px;
                 gap: 30px;
             }
+            @media screen and (max-width: 425px){
+                padding: 48px 16px;
+            }
         }
     }
     .footer__container{
@@ -425,6 +524,12 @@ body{
         @media screen and (max-width: 1024px){
             padding: 64px 60px;
         }
+        @media screen and (max-width: 865px){
+            padding: 64px 32px;
+        }
+        @media screen and (max-width: 425px){
+            padding: 48px 16px;
+        }
 
         &__logo{
             display: flex;
@@ -435,8 +540,17 @@ body{
             margin-bottom: 4rem;
             height: 244px;
 
+            @media screen and (max-width: 768px){
+                flex-wrap: wrap;
+                height: auto;
+            }
             &__info{
                 margin-top: 6px;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                    margin-bottom: 4rem;
+                    margin-top: 0.3rem;
+                }
                 &__submit{
                     display: flex;
                     input{
@@ -446,6 +560,9 @@ body{
                         background: #2C3444;
                         border: 1px solid #2E3545;
                         border-radius: 6px 0px 0px 6px;
+                        @media screen and (max-width: 768px){
+                            width: 80%;
+                        }
                     }
                     button{
                         padding: 12px 18px;
