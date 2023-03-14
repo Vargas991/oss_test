@@ -52,11 +52,11 @@ body .header__container__logo {
     margin-left: 0rem;
   }
 }
-body .header__container__logo img {
+body .header__container__logo__image img {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  body .header__container__logo img {
+  body .header__container__logo__image img {
     margin-left: 0.4rem;
   }
 }

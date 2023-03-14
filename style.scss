@@ -44,11 +44,12 @@ body{
                 max-width: 120px;
                 margin-left: 0rem;
             }
-
-            img{
-                width: 100%;
-                @media screen and (max-width: 768px){
-                    margin-left: 0.4rem;
+            &__image{
+                img{
+                    width: 100%;
+                    @media screen and (max-width: 768px){
+                        margin-left: 0.4rem;
+                    }
                 }
             }
         &__mobile{
