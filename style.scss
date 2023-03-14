@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #F8F9FB;
+    background-color: white;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
@@ -37,14 +37,11 @@ a {
     @include mq(425px){
         width: 99%;
     }
-
-
-
 }
-
 
 .header {
     border-bottom: solid 1px #EAEBF0;
+    background-color: #F8F9FB;
 
     &__content {
 
@@ -164,7 +161,7 @@ a {
     align-items: center;
     padding-top: 79px;
     height: 328px;
-    background-color: #EAEBF0;
+    background-color: #F8F9FB;
 
     &__description{
         color: #437EF7;
