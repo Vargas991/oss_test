@@ -14,13 +14,11 @@
     }
   }
   body{
-    max-width: 1440px;
     font-family: 'Inter';
     margin: auto;
   }
 /* ===================================header======================================= */
   .header{
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -37,6 +35,9 @@
     }
 
     &__container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -337,6 +338,7 @@
         padding: 48px 32px;
 
         &__container{
+           
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -419,6 +421,9 @@
     }
 
     &__container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         display: flex;
         gap: 40px;
 
@@ -607,6 +612,9 @@
     background: #2B63D9;
 
     &__container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         padding: 64px 112px;
         display: flex;
         gap: 50px;
@@ -822,6 +830,10 @@
   .last_blog{
 
     &__container{
+
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         padding: 64px 112px;
         display: flex;
         flex-direction: column;
@@ -970,6 +982,10 @@
   .industry{
     background: #2B63D9;
     &__container{
+
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         padding: 64px 420px;
         display: flex;
         flex-direction: column;
@@ -1092,6 +1108,9 @@
 
 
     &__container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         padding:64px 112px;
         display: flex;
         flex-direction: column;
