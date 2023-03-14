@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+@mixin mq($breakpoint) {
+    @media all and (max-width: $breakpoint){
+      @content;
+    }
+}
+
 * {
 
     margin: 0;
@@ -21,7 +27,21 @@ a {
     width: 100%;
     margin: 0 auto;
 
+    @include mq(1200px){
+        width: 88%;
+    }
+    @include mq(768px){
+        width: 95%;
+    }
+
+    @include mq(425px){
+        width: 99%;
+    }
+
+
+
 }
+
 
 .header {
     border-bottom: solid 1px #EAEBF0;
@@ -31,35 +51,69 @@ a {
         display: flex;
         justify-content: flex-end;
         padding: 29px 33px 29px 37px;
-
+        
+        @include mq(1024px){
+                justify-content: space-between;
+            }
 
         &-logo {
             width: 150px;
             height: 28px;
         }
-
+        
         &-menu {
             font-size: .9375rem;
             font-style: normal;
             font-weight: 600;
             font-size: .9375rem;
             line-height: 22px;
-            color: #272D37;
             margin-left: 68px;
             padding-top: 3px;
-
-            a {
+            @include mq(1024px){
+                    display: none;
+            }
+                a {
+                color: #272D37;
                 margin-right: 29px;
                 
                 img{
                     margin-left: 15px;
                 }
             }
+
+            &.active{
+                display: flex;
+                opacity: 1;
+                transition: ease-in-out 0.5s;
+            }
+            @include mq(1024px){
+                background-color: #151B28;
+                position: absolute;
+                right: 0;
+                top: 85px;
+                bottom: 0;
+                display: none;
+                flex-direction: column;
+                padding: 10px;
+                transition: ease-in-out 0.5s;
+                opacity: 0;
+                visibility: none;
+
+                a{
+                    padding: 10px;
+                    color: #fff;
+                }
+
+            }
         }
 
         &-auth {
             margin-left: auto;
             padding-top: 2px;
+
+            @include mq(1024px){
+                display: none;
+            }
             a {
                 font-style: normal;
                 font-weight: 600;
@@ -90,6 +144,15 @@ a {
             }
 
         }
+        &-hamburguer{
+            display: none;
+
+            @include mq(1024px){
+                display: block;
+            }
+        }
+
+
     }
 
 
@@ -119,7 +182,7 @@ a {
         max-width: 550px;
         font-style: normal;
         font-weight: 700;
-        font-size: 52px;
+        font-size: 3.25rem;
         line-height: 60px;
 
         text-align: center;
@@ -127,6 +190,10 @@ a {
 
         color: #272D37;
 
+        @include mq(425px){
+            font-size: 2.25rem;
+            margin: 0 10px;
+        }
 
     }
 
@@ -142,13 +209,21 @@ a {
         margin-top: 66px;
         margin-bottom: 60px;
 
-        @media screen and (max-width: 1024px) {
+        @include mq(1200px) {
             flex-direction: column;
         }
+        @include mq(425px) {
+            padding: 0 10px;
+        }
+
         &-lefth{
             width: 588px;
+
+            @include mq(1200px){
+                width: 100%;
+            }
             .img{
-                width: 588px;
+                width: 100%;
                 img{
                     width: 100%;
                 }
@@ -205,7 +280,7 @@ a {
            display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            // align-items: center;
             padding: 0px;
             gap: 28px;
 
@@ -215,8 +290,17 @@ a {
                 align-items: flex-start;
                 padding: 0px;
                 gap: 24px;
+                max-width: 588px;
+
+                @include mq(425px){
+                    flex-direction: column;
+                }
+
                 .img{
                     min-width: 188px;
+                    @include mq(425px){
+                    width: 100%;
+                }
                     img{
                         width: 100%;
                     }
@@ -284,6 +368,19 @@ a {
         align-items: center;
         padding: 0px 32px;
         gap: 120px;
+        
+        @include mq(1200px){
+            gap: 60px;
+        }
+        
+        @include mq(768px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 64px 32px;
+        }
+
+
 
         &-info{
             display: flex;
@@ -291,6 +388,12 @@ a {
             align-items: flex-start;
             padding: 65px 0 63.5px 0;
             gap: 24px;
+
+            @include mq(768px){
+                padding: 0;
+                gap: 24px;
+            
+            }
 
             .title{
                 font-style: normal;
@@ -325,7 +428,12 @@ a {
             align-items: flex-start;
             // padding: 0px;
             gap: 8px;
-            width: 440px;
+            max-width: 440px;
+            
+
+            @include mq(425px){
+                width: 100%;
+            }
 
             .button{
                 display: flex;
@@ -345,11 +453,18 @@ a {
                     letter-spacing: -0.1px;
                     padding: 12px 18px;
 
-                    @media screen and (max-width:990px){
-                        
+                    @include mq(1200px){
+                        padding: 12px 18px;
+                        width: 250px;
+                    }
+
+                    @include mq(768px){
+                        max-width: 354px;
+                        // width: 100%;
+                    }
+
+                   @include mq(425px){
                         width: 100%;
-                        padding-left: 20px;
-                        margin-left: 0rem;
                     }
                 }
 
@@ -397,10 +512,10 @@ a {
 }
 
 .blog{
-    
+    background: #FFFFFF;
     &__content{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 64px 0px 24px;
@@ -411,7 +526,7 @@ a {
 
         /* Base/White */
 
-        background: #FFFFFF;
+        
 
         &-title{
             font-style: normal;
@@ -435,11 +550,26 @@ a {
             padding: 0px 32px;
             gap: 49px 32px;
             margin-bottom: 40.7px;
+            // @include mq(425px){
+            //    padding: 0;
+            // }
+            @include mq(768px){
+            flex-direction: column;
+            padding: 0 10px;
+            }   
 
             .post{
                 max-width: 384px;
                 &__img{
                     border-radius: 10px;
+
+                    @include mq(425px){
+                        min-width: 200px;
+                        width: 100%;
+                    }
+                    img{
+                        width: 100%;
+                    }
                 }
                 &__date{
                     font-style: normal;
@@ -513,7 +643,8 @@ a {
             color: #FFFFFF;
         }
         &-title{
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             font-style: normal;
             font-weight: 600;
             font-size: 32px;
@@ -527,6 +658,15 @@ a {
 
             color: #FFFFFF;
             margin-top: 8px;
+
+            @include mq(768px){
+                width: unset;
+                margin: 0 10px;
+            }
+            @include mq(425px){
+                width: unset;
+                margin: 0 10px;
+            }
         }
         &-cat{
             background: #FFFFFF;
@@ -561,11 +701,24 @@ a {
     &-info{
         display: flex;
         padding: 64px 32px;
+
+        @include mq(768px){
+            flex-direction: column;
+            gap: 30px;
+        }
         // justify-content: space-between;
         .infologo{
             // flex-basis: 10%;
             width: 420px;
             // margin-right: 180px;
+
+            @include mq(768px){
+               width: unset;
+            }
+            @include mq(425px){
+               width: unset;
+            }
+
             .img{
                 width: 160px;
                 padding-left: 5px;
@@ -608,6 +761,9 @@ a {
                         padding-left: 20px;
                         margin-left: 0rem;
                     }
+                    @include mq(425px){
+                        width: 250px;
+                    }
                 }
 
                 input[type="text"]::placeholder {
@@ -646,6 +802,16 @@ a {
             justify-content: flex-end;
             gap: 174.5px;
             padding-top: 2px;
+            
+            @include mq(1200px){
+                gap: 100px;
+            }
+
+            @include mq(768px){
+                justify-content: space-between;
+                gap: 0;
+            }
+
             &__item{
                 display: flex;
                 flex-direction: column;
@@ -711,3 +877,6 @@ a {
 }
 }
 
+// *{
+//     border: solid 1px #000;
+// }
