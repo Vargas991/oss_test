@@ -1,8 +1,15 @@
+* {
+  margin: 0px;
+}
+
 body {
   max-width: 1440px;
   font-family: "Inter", sans-serif;
   margin: auto;
   background-color: #F8F9FB;
+}
+body .img-auto {
+  width: 100%;
 }
 body .header__container {
   display: flex;
@@ -11,6 +18,16 @@ body .header__container {
   padding: 20px 111px 16px;
   border-bottom: 1px solid #EAEBF0;
 }
+@media screen and (max-width: 1024px) {
+  body .header__container {
+    padding: 20px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .header__container {
+    padding: 20.8px 14px;
+  }
+}
 body .header__container__logo {
   display: flex;
   flex-direction: row;
@@ -18,6 +35,13 @@ body .header__container__logo {
   padding: 0px;
   gap: 69px;
   margin-left: 0.4rem;
+}
+@media screen and (max-width: 768px) {
+  body .header__container__logo {
+    margin-top: 0rem;
+    max-width: 120px;
+    margin-left: 0rem;
+  }
 }
 body .header__container__list {
   list-style: none;
@@ -30,6 +54,7 @@ body .header__container__list {
 body .header__container__list li {
   font-size: 15px;
   color: #272D37;
+  font-weight: 600;
 }
 body .header__container__list li:nth-child(3) {
   width: 109px;
@@ -94,12 +119,17 @@ body .main__container__second {
   max-width: 1440px;
   background: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+  body .main__container__second {
+    padding: 48px 60px;
+  }
+}
 body .main__container__second__cards {
   display: flex;
   gap: 40px;
 }
-body .main__container__second__cards__one, body .main__container__second__cards__two {
-  width: 50%;
+body .main__container__second__cards__one {
+  max-width: 588px;
 }
 body .main__container__second__cards__one h3 {
   font-weight: 600;
@@ -108,6 +138,7 @@ body .main__container__second__cards__one h3 {
   letter-spacing: -0.01em;
   color: #272D37;
   margin: 19px 0px 17px;
+  max-width: 588px;
 }
 body .main__container__second__cards__one p {
   font-weight: 400;
@@ -116,6 +147,11 @@ body .main__container__second__cards__one p {
   letter-spacing: -0.1px;
   color: #5F6D7E;
 }
+@media screen and (max-width: 1200px) {
+  body .main__container__second__cards__one p {
+    margin-bottom: 24px;
+  }
+}
 body .main__container__second__cards__one span {
   font-weight: 500;
   font-size: 14px;
@@ -123,10 +159,16 @@ body .main__container__second__cards__one span {
   letter-spacing: -0.1px;
   color: #5F6D7E;
 }
+@media screen and (max-width: 1200px) {
+  body .main__container__second__cards__one {
+    max-width: 1200px;
+  }
+}
 body .main__container__second__cards__two {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: 588px;
 }
 body .main__container__second__cards__two__card {
   display: flex;
@@ -158,6 +200,11 @@ body .main__container__second__cards__two__card span {
   line-height: 20px;
   letter-spacing: -0.1px;
   color: #5F6D7E;
+}
+@media screen and (max-width: 1200px) {
+  body .main__container__second__cards {
+    flex-direction: column;
+  }
 }
 body .main__container__third {
   padding: 64px 112px;
@@ -191,6 +238,13 @@ body .main__container__third__submit {
   padding: 40px 0px;
   margin-left: 70px;
 }
+@media screen and (max-width: 920px) {
+  body .main__container__third__submit {
+    margin-left: 0px;
+    padding: 0px 0px;
+    max-width: 476px;
+  }
+}
 body .main__container__third__submit > div {
   display: flex;
 }
@@ -203,6 +257,11 @@ body .main__container__third__submit > div input {
   border: solid 1px #c4dae7;
   border-radius: 4px 0px 0 4px;
   color: #919BA7;
+}
+@media screen and (max-width: 920px) {
+  body .main__container__third__submit > div input {
+    width: 80%;
+  }
 }
 body .main__container__third__submit > div button {
   padding: 12px 18px;
@@ -222,12 +281,35 @@ body .main__container__third__submit span {
   color: #B1CCFB;
   padding-top: 8px;
 }
+@media screen and (max-width: 1024px) {
+  body .main__container__third {
+    padding: 64px 60px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 920px) {
+  body .main__container__third {
+    flex-direction: column;
+  }
+}
 body .main__container__fourth {
   padding: 64px 112px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 64px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  body .main__container__fourth {
+    padding: 48px 60px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .main__container__fourth {
+    padding: 48px 32px;
+    gap: 30px;
+  }
 }
 body .main__container__fourth h1 {
   margin: auto;
@@ -244,6 +326,11 @@ body .main__container__fourth__cards {
 }
 body .main__container__fourth__cards img {
   margin-bottom: 12px;
+}
+@media screen and (max-width: 1440px) {
+  body .main__container__fourth__cards img.image-container {
+    width: 100%;
+  }
 }
 body .main__container__fourth__cards span {
   font-weight: 500;
@@ -271,6 +358,24 @@ body .main__container__fourth__cards a {
 body .main__container__fourth__cards a img {
   margin: 4px 0px 5px 8px;
 }
+@media screen and (max-width: 1440px) {
+  body .main__container__fourth__cards {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 48px 32px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  body .main__container__fourth__cards {
+    grid-template-columns: repeat(auto-fill, minmax(337px, 1fr));
+    gap: 60px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .main__container__fourth__cards {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 60px 20px;
+  }
+}
 body .main__container__fifth {
   padding: 64px 420px;
   display: flex;
@@ -293,6 +398,16 @@ body .main__container__fifth h1 {
   color: #FFFFFF;
   margin: 0px;
 }
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  body .main__container__fifth h1 {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .main__container__fifth h1 {
+    max-width: 600px;
+  }
+}
 body .main__container__fifth button {
   padding: 12px 18px;
   margin-top: 1.5rem;
@@ -305,11 +420,27 @@ body .main__container__fifth button {
   color: #437EF7;
   border: none;
 }
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  body .main__container__fifth {
+    padding: 64px 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .main__container__fifth {
+    padding: 64px 60px;
+    gap: 30px;
+  }
+}
 body .footer__container {
   padding: 66px 112px;
   display: flex;
   flex-direction: column;
   background: #151B28;
+}
+@media screen and (max-width: 1024px) {
+  body .footer__container {
+    padding: 64px 60px;
+  }
 }
 body .footer__container__logo {
   display: flex;
@@ -355,6 +486,12 @@ body .footer__container__logo__info p {
   line-height: 24px;
   letter-spacing: -0.1px;
   color: #A5ACBA;
+  margin: 17px;
+}
+@media screen and (max-width: 1024px) {
+  body .footer__container__logo__info p {
+    margin-left: 0;
+  }
 }
 body .footer__container__logo__list strong {
   font-weight: 600;
