@@ -16,9 +16,9 @@ body {
 
 /* ===================================header======================================= */
 .header {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: auto;
   justify-content: center;
   background: #F8F9FB;
 }
@@ -283,6 +283,9 @@ body {
 
 /* ====================================first blog====================== */
 .firts_blog {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
   padding: 64px 112px;
 }
 @media all and (max-width: 1024px) {
@@ -362,9 +365,6 @@ body {
   }
 }
 .firts_blog__container {
-  max-width: 1440px;
-  width: 100%;
-  margin: auto;
   display: flex;
   gap: 40px;
 }

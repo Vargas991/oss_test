@@ -17,11 +17,14 @@
     font-family: 'Inter';
     margin: auto;
   }
+ 
+ 
 /* ===================================header======================================= */
   .header{
+    margin: auto;
+
     display: flex;
     flex-direction: column;
-    margin: auto;
     justify-content: center;
     background: #F8F9FB;
     &__menu{
@@ -326,7 +329,9 @@
 /* ====================================first blog====================== */
   .firts_blog{
 
-
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
     padding: 64px 112px;
 
     @include mq(1024px){
@@ -421,9 +426,7 @@
     }
 
     &__container{
-        max-width: 1440px;
-        width: 100%;
-        margin: auto;
+        
         display: flex;
         gap: 40px;
 
