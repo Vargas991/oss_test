@@ -660,7 +660,7 @@ body {
   margin-left: 1rem;
   font-size: 0.9rem;
   border: solid 1px #c4dae7;
-  border-radius: 10px 0px 0 10px;
+  border-radius: 6px 0px 0px 6px;
   color: #919BA7;
 }
 @media all and (max-width: 768px) {
