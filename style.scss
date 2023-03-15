@@ -911,14 +911,17 @@ a {
             @include mq(768px){
                 justify-content: space-between;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 0;
             }
 
             &__item{
                 display: flex;
                 flex-direction: column;
                 margin-left: 10px;
-            
+
+                 @include mq(768px){
+                    margin-left: 0;
+                }
 
                 h3{
                     font-style: normal;
