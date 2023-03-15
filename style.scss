@@ -34,9 +34,7 @@ a {
         width: 95%;
     }
 
-    @include mq(425px){
-        width: 97%;
-    }
+   
 }
 
 .header {
@@ -386,6 +384,15 @@ a {
 .subscription{
     background: #2B63D9;
     margin-top: 10px;
+
+
+    @include mq(768px){
+        .container{
+
+            width: 100%;
+        }
+    }
+
     &__content{
 
         display: flex;
@@ -404,8 +411,9 @@ a {
             gap: 24px;
             padding: 64px 32px;
         }
-
-
+        
+        
+        
 
         &-info{
             display: flex;
@@ -512,13 +520,11 @@ a {
                     gap: 8px;
 
                     
-
-                    /* Primary/600 */
-
                     background: #437EF7;
                     border-radius: 0px 6px 6px 0px;
                 }
             }
+
             .description{
                 font-style: normal;
                 font-weight: 400;
@@ -538,6 +544,14 @@ a {
 
 .blog{
     background: #FFFFFF;
+
+
+    @include mq(768px){
+        .container{
+            width: 100%;
+        }
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
@@ -549,9 +563,18 @@ a {
 
         max-width: 1280px;
 
-        /* Base/White */
 
-        
+        @include mq(1024px){
+            gap: 30px;
+        }
+
+        @include mq(768px){
+            padding: 48px 32px;
+        }
+
+        @include mq(432px){
+            padding: 48px 16px;
+        }
 
         &-title{
             font-style: normal;
@@ -579,7 +602,6 @@ a {
             // }
             @include mq(768px){
             flex-direction: column;
-            padding: 0 10px;
             }   
 
             .post{
@@ -688,8 +710,14 @@ a {
                 margin: 0 10px;
             }
             @include mq(425px){
-                width: unset;
-                margin: 0 10px;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                    letter-spacing: -0.02em;
+                    color: #FFFFFF;
+                    margin-top: 30px;
             }
         }
         &-cat{
@@ -719,6 +747,12 @@ a {
     background-color: #151B28;
 
     
+    @include mq(768px){
+        .container{
+            width: 100%;
+        }    
+    }
+    
 &__content{
     
 
@@ -729,16 +763,21 @@ a {
         @include mq(768px){
             flex-direction: column;
             gap: 30px;
+            width: unset;
+            padding: 64px 32px;
+        }
+        @include mq(425px){
+            flex-direction: column;
+            gap: 30px;
+            width: unset;
+            padding: 48px 16px;
         }
         // justify-content: space-between;
         .infologo{
             // flex-basis: 10%;
-            width: 420px;
+            // width: 420px;
             // margin-right: 180px;
 
-            @include mq(768px){
-               width: unset;
-            }
             @include mq(425px){
                width: unset;
             }
@@ -779,15 +818,13 @@ a {
                     padding: 15px 44px 15px 16px;
                     gap: 8px;   
 
-                    @media screen and (max-width:990px){
+                    // @media screen and (max-width:990px){
                         
-                        width: 100%;
-                        padding-left: 20px;
-                        margin-left: 0rem;
-                    }
-                    @include mq(425px){
-                        width: 250px;
-                    }
+                    //     width: 100%;
+                    //     padding-left: 20px;
+                    //     margin-left: 0rem;
+                    // }
+                        width: 80%;
                 }
 
                 input[type="text"]::placeholder {
@@ -833,13 +870,15 @@ a {
 
             @include mq(768px){
                 justify-content: space-between;
-                gap: 0;
+                flex-wrap: wrap;
+                gap: 20px;
             }
 
             &__item{
                 display: flex;
                 flex-direction: column;
                 margin-left: 10px;
+            
 
                 h3{
                     font-style: normal;
