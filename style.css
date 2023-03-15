@@ -15,7 +15,7 @@ body .header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 111px 16px;
+  padding: 20px 111px;
   border-bottom: 1px solid #EAEBF0;
 }
 @media screen and (max-width: 1024px) {
@@ -164,7 +164,8 @@ body .main__container__first {
 body .main__container__first h5 {
   color: #437EF7;
   font-size: 14px;
-  margin-top: 2px;
+  margin-top: 6px;
+  margin-bottom: 22px;
 }
 body .main__container__first h1 {
   font-weight: 700;
@@ -192,7 +193,7 @@ body .main__container__first h1 span {
   margin-left: -10px;
 }
 body .main__container__second {
-  padding: 64px 112px;
+  padding: 98px 112px 64px;
   max-width: 1440px;
   background: #FFFFFF;
 }
@@ -233,6 +234,7 @@ body .main__container__second__cards__one p {
   line-height: 24px;
   letter-spacing: -0.1px;
   color: #5F6D7E;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 1200px) {
   body .main__container__second__cards__one p {
@@ -367,8 +369,10 @@ body .main__container__third__submit > div input {
   height: 43px;
   padding-left: 16px;
   font-size: 0.9rem;
+  font-size: 16px;
+  letter-spacing: -0.3px;
   border: solid 1px #c4dae7;
-  border-radius: 4px 0px 0 4px;
+  border-radius: 7px 0px 0 7px;
   color: #919BA7;
 }
 @media screen and (max-width: 920px) {
@@ -484,7 +488,7 @@ body .main__container__fourth__cards a {
   display: flex;
 }
 body .main__container__fourth__cards a img {
-  margin: 0px 0px 5px 8px;
+  margin: 3px 0px 2px 8px;
 }
 @media screen and (max-width: 1440px) {
   body .main__container__fourth__cards {
@@ -655,7 +659,7 @@ body .footer__container__logo__info p {
   line-height: 24px;
   letter-spacing: -0.1px;
   color: #A5ACBA;
-  margin: 17px;
+  margin: 17px 17px 17px 0px;
 }
 @media screen and (max-width: 1024px) {
   body .footer__container__logo__info p {
@@ -682,6 +686,22 @@ body .footer__container__logo__list ul li {
   flex-direction: column;
   gap: 11px;
   color: #A5ACBA;
+}
+body .footer__container__logo__list.list__one {
+  width: 149px;
+}
+@media screen and (max-width: 1024px) {
+  body .footer__container__logo__list.list__one {
+    width: auto;
+  }
+}
+body .footer__container__logo__list.list__two {
+  width: 152px;
+}
+@media screen and (max-width: 1024px) {
+  body .footer__container__logo__list.list__two {
+    width: auto;
+  }
 }
 body .footer__container__end {
   border-top: 1px solid #2E3545;
