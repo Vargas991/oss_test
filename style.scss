@@ -27,7 +27,7 @@ a {
     width: 88.88%;
     margin: 0 auto;
 
-    @include mq(1200px){
+    @include mq(1024px){
         width: 88%;
     }
     @include mq(768px){
@@ -51,6 +51,7 @@ a {
         
         @include mq(1024px){
             justify-content: space-between;
+            padding: 20px 0px;
         }
         @include mq(768px){
             padding: 20.8px 14px;
@@ -176,15 +177,10 @@ a {
     background-color: #F8F9FB;
     
     @include mq(1024px){
-        padding: 45px 0 65px;
+        padding: 45px 0 ;
 
     }
-    @include mq(768px){
-        padding-top: 45px;
-
-    }
-
-
+    
     &__description{
         color: #437EF7;
         font-style: normal;

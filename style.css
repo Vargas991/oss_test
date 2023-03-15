@@ -19,7 +19,7 @@ a {
   width: 88.88%;
   margin: 0 auto;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1024px) {
   .container {
     width: 88%;
   }
@@ -47,6 +47,7 @@ a {
 @media all and (max-width: 1024px) {
   .header__content {
     justify-content: space-between;
+    padding: 20px 0px;
   }
 }
 @media all and (max-width: 768px) {
@@ -162,12 +163,7 @@ a {
 }
 @media all and (max-width: 1024px) {
   .banner {
-    padding: 45px 0 65px;
-  }
-}
-@media all and (max-width: 768px) {
-  .banner {
-    padding-top: 45px;
+    padding: 45px 0;
   }
 }
 .banner__description {
