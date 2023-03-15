@@ -388,7 +388,6 @@ a {
 
     @include mq(768px){
         .container{
-
             width: 100%;
         }
     }
@@ -410,6 +409,13 @@ a {
             align-items: flex-start;
             gap: 24px;
             padding: 64px 32px;
+        }
+        
+        @include mq(425px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 48px 16px;
         }
         
         
@@ -439,6 +445,14 @@ a {
 
                 color: #FFFFFF;
 
+                 @include mq(425px){
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                    letter-spacing: -0.02em
+                }
+
             }
             .decription{
                 font-style: normal;
@@ -453,18 +467,17 @@ a {
 
                 color: #B1CCFB;
 
+               
             }
         }
         &-form{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             // padding: 0px;
             gap: 8px;
             max-width: 440px;
             
-
-            @include mq(425px){
+            @include mq(768px){
                 width: 100%;
             }
 
@@ -473,32 +486,61 @@ a {
                 margin-top: -1px;
                 position: relative;
                 left: -1px;
+                // max-width: 476px;
+
                 input[type="text"] {
-                    border: none;
+
+
                     background: white;
-                    width: 354px;
-                    gap: 8px;
-                    font-size: .9375rem;
-                    font-weight: 400;
-                    line-height: 22px;
-                    border-radius: 6px 0px 0 6px;
-                    color: #919BA7;
-                    letter-spacing: -0.1px;
-                    padding: 12px 18px;
-
-                    @include mq(1200px){
-                        padding: 12px 18px;
-                        width: 250px;
-                    }
-
+                    // max-width: 352px;
                     @include mq(768px){
-                        max-width: 354px;
-                        // width: 100%;
-                    }
+                        max-width: 768px;
+                        width: 80%;
+                        margin-left: 0rem;
 
-                   @include mq(425px){
-                        width: 100%;
+                    }   
+                    
+                    @include mq(920px){
+                        margin-left: 0px;
+                        // width: 80%;
+
                     }
+                    height: 46px;
+                    padding-left: 16px;
+                    margin-left: 1rem;
+                    font-size: 0.9rem;
+                    border: solid 1px  #c4dae7;
+                    border-radius: 6px 0px 0px 6px;
+                    color: #919BA7;
+                    // } 
+
+
+                    // border: none;
+                    // background: white;
+                    // // width: 354px;
+                    // gap: 8px;
+                    // font-size: .9375rem;
+                    // font-weight: 400;
+                    // line-height: 22px;
+                    // border-radius: 6px 0px 0 6px;
+                    // color: #919BA7;
+                    // letter-spacing: -0.1px;
+                    // padding: 12px 18px;
+
+                    // @include mq(1024){
+                    //     // padding: 12px 18px;
+                        
+                    //     width: 80%;
+                    // }
+
+                //     @include mq(768px){
+                //         max-width: 354px;
+                //         // width: 100%;
+                //     }
+
+                //    @include mq(425px){
+                //         width: 100%;
+                //     }
                 }
 
                 input[type="text"]::placeholder {
@@ -710,13 +752,11 @@ a {
                 margin: 0 10px;
             }
             @include mq(425px){
-                    font-family: "Inter";
                     font-style: normal;
                     font-weight: 600;
                     font-size: 28px;
                     line-height: 36px;
                     letter-spacing: -0.02em;
-                    color: #FFFFFF;
                     margin-top: 30px;
             }
         }

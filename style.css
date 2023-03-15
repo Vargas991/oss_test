@@ -354,6 +354,14 @@ a {
     padding: 64px 32px;
   }
 }
+@media all and (max-width: 425px) {
+  .subscription__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 48px 16px;
+  }
+}
 .subscription__content-info {
   display: flex;
   flex-direction: column;
@@ -376,6 +384,15 @@ a {
   /* Base/White */
   color: #FFFFFF;
 }
+@media all and (max-width: 425px) {
+  .subscription__content-info .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+}
 .subscription__content-info .decription {
   font-style: normal;
   font-weight: 400;
@@ -389,11 +406,10 @@ a {
 .subscription__content-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   max-width: 440px;
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
   .subscription__content-form {
     width: 100%;
   }
@@ -405,32 +421,25 @@ a {
   left: -1px;
 }
 .subscription__content-form .button input[type=text] {
-  border: none;
   background: white;
-  width: 354px;
-  gap: 8px;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  line-height: 22px;
-  border-radius: 6px 0px 0 6px;
+  height: 46px;
+  padding-left: 16px;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  border: solid 1px #c4dae7;
+  border-radius: 6px 0px 0px 6px;
   color: #919BA7;
-  letter-spacing: -0.1px;
-  padding: 12px 18px;
-}
-@media all and (max-width: 1200px) {
-  .subscription__content-form .button input[type=text] {
-    padding: 12px 18px;
-    width: 250px;
-  }
 }
 @media all and (max-width: 768px) {
   .subscription__content-form .button input[type=text] {
-    max-width: 354px;
+    max-width: 768px;
+    width: 80%;
+    margin-left: 0rem;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 920px) {
   .subscription__content-form .button input[type=text] {
-    width: 100%;
+    margin-left: 0px;
   }
 }
 .subscription__content-form .button input[type=text]::placeholder {
@@ -609,13 +618,11 @@ a {
 }
 @media all and (max-width: 425px) {
   .welcome__content-title {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
     margin-top: 30px;
   }
 }
