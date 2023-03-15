@@ -376,6 +376,11 @@ body .main__container__third__submit > div input {
     width: 80%;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__third__submit > div input {
+    width: 42.5px;
+  }
+}
 body .main__container__third__submit > div button {
   padding: 12px 18px;
   max-width: 88px;

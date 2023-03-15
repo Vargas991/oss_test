@@ -344,6 +344,9 @@ body{
                         @media screen and (max-width:920px){
                             width: 80%;
                         }
+                        @media screen and (max-width:425px){
+                            width: 42.5px;
+                        }
                     }
                     button{
                         padding: 12px 18px;
