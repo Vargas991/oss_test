@@ -31,7 +31,7 @@ a {
 }
 @media all and (max-width: 425px) {
   .container {
-    width: 99%;
+    width: 97%;
   }
 }
 
@@ -49,11 +49,16 @@ a {
     justify-content: space-between;
   }
 }
+@media all and (max-width: 768px) {
+  .header__content {
+    padding: 20.8px 14px;
+  }
+}
 .header__content-logo {
   width: 150px;
   height: 28px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
   .header__content-logo {
     width: 120px;
   }
@@ -152,9 +157,18 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 79.5px;
-  height: 328px;
+  padding: 80px 0 92px;
   background-color: #F8F9FB;
+}
+@media all and (max-width: 1024px) {
+  .banner {
+    padding: 45px 0 65px;
+  }
+}
+@media all and (max-width: 768px) {
+  .banner {
+    padding-top: 45px;
+  }
 }
 .banner__description {
   color: #437EF7;
@@ -179,10 +193,16 @@ a {
 .banner__title span {
   margin-left: -12px;
 }
+@media all and (max-width: 1024px) {
+  .banner__title {
+    margin: 0 30px;
+  }
+}
 @media all and (max-width: 425px) {
   .banner__title {
     font-size: 2.25rem;
-    margin: 0 10px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 
@@ -199,8 +219,9 @@ a {
     flex-direction: column;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
   .firstcard__content {
+    margin-top: 48px;
     padding: 0 10px;
   }
 }
@@ -476,7 +497,6 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0px 32px;
   gap: 49px 32px;
   margin-bottom: 40.7px;
 }
