@@ -56,6 +56,14 @@ a {
         &-logo {
             width: 150px;
             height: 28px;
+
+            @include mq(1024px){
+                width: 120px;
+            }
+
+            img{
+                width: 100%;
+            }
         }
         
         &-menu {
@@ -74,7 +82,10 @@ a {
                 margin-right: 29px;
                 
                 img{
-                    margin-left: 15px;
+                    position: relative;
+                    top: -1.1px;
+                    left: 13px;
+                    margin-right: 16px;
                 }
             }
 
@@ -84,17 +95,15 @@ a {
                 transition: ease-in-out 0.5s;
             }
             @include mq(1024px){
-                background-color: #151B28;
-                position: absolute;
-                right: 0;
-                top: 85px;
-                bottom: 0;
-                display: none;
-                flex-direction: column;
-                padding: 10px;
-                transition: ease-in-out 0.5s;
-                opacity: 0;
-                visibility: none;
+               margin-top: 0rem;
+               display: flex;
+               flex-direction: column;
+            position: absolute;
+            top: 10%;
+            right: 0;
+            gap: 0;
+            background-color: #2B63D9;
+            display: none;
 
                 a{
                     padding: 10px;
@@ -106,7 +115,7 @@ a {
 
         &-auth {
             margin-left: auto;
-            padding-top: 2px;
+            padding-top: 3px;
 
             @include mq(1024px){
                 display: none;
@@ -131,10 +140,11 @@ a {
                 font-size: .9375rem;
                 line-height: 22px;
                 margin-left: 20px;
+                margin-top: 10px;
                 color: #FFFFFF;
                 background-color: #437EF7;
 
-                padding: 13px 18px;
+                padding: 14px 18px;
                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
                 border-radius: 6px;
 
@@ -159,7 +169,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 79px;
+    padding-top: 79.5px;
     height: 328px;
     background-color: #F8F9FB;
 
@@ -169,7 +179,7 @@ a {
         font-weight: 600;
         font-size: .875rem;
         line-height: 20px;
-        margin-bottom: 16px;
+        margin-bottom: 15.5px;
 
         text-align: center;
         letter-spacing: -0.1px;
@@ -186,6 +196,10 @@ a {
         letter-spacing: -0.01em;
 
         color: #272D37;
+
+        span{
+            margin-left: -12px;
+        }
 
         @include mq(425px){
             font-size: 2.25rem;
