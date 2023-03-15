@@ -20,16 +20,17 @@ body .header__container {
 }
 @media screen and (max-width: 1024px) {
   body .header__container {
-    padding: 20px 60px 24px;
+    padding: 21px 60px 24px;
   }
 }
 @media screen and (max-width: 768px) {
   body .header__container {
-    padding: 20.8px 14px;
+    padding: 20.8px 14px 24.8px;
   }
 }
 body .header__container .mobile-more {
   margin-right: 7px;
+  margin-top: -1px;
   display: none;
 }
 @media screen and (max-width: 1024px) {
@@ -52,12 +53,13 @@ body .header__container__logo {
     margin-left: 0rem;
   }
 }
-body .header__container__logo__image img {
+body .header__container__logo__image {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  body .header__container__logo__image img {
+  body .header__container__logo__image {
     margin-left: 0.4rem;
+    width: 120px;
   }
 }
 body .header__container__logo__mobile {
@@ -165,11 +167,29 @@ body .main__container__first {
     padding: 45px 30px 65px;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__first {
+    padding: 44px 30px 65px;
+  }
+}
 body .main__container__first h5 {
   color: #437EF7;
-  font-size: 13.8px;
+  font-size: 13.9px;
   margin-top: 6px;
   margin-bottom: 22px;
+  font-weight: 600;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__first h5 {
+    margin-bottom: 0px;
+    margin-top: 3px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .main__container__first h5 {
+    margin-bottom: 2px;
+    margin-top: 1px;
+  }
 }
 body .main__container__first h1 {
   font-weight: 700;
@@ -188,9 +208,10 @@ body .main__container__first h1 {
 }
 @media screen and (max-width: 425px) {
   body .main__container__first h1 {
-    font-size: 35px;
+    font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.02em;
+    margin-top: 1.1rem;
   }
 }
 body .main__container__first h1 span {
@@ -232,6 +253,11 @@ body .main__container__second__cards__one h3 {
   margin: 19px 0px 17px;
   max-width: 588px;
 }
+@media screen and (max-width: 425px) {
+  body .main__container__second__cards__one h3 {
+    margin: 20px 0px 16.5px;
+  }
+}
 body .main__container__second__cards__one p {
   font-weight: 400;
   font-size: 16px;
@@ -242,7 +268,7 @@ body .main__container__second__cards__one p {
 }
 @media screen and (max-width: 1200px) {
   body .main__container__second__cards__one p {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 }
 body .main__container__second__cards__one span {
@@ -304,6 +330,12 @@ body .main__container__second__cards__two__card p {
   color: #5F6D7E;
   margin-top: 8px;
   margin-bottom: 14px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__second__cards__two__card p {
+    margin-top: 5px;
+    margin-bottom: 14px;
+  }
 }
 body .main__container__second__cards__two__card span {
   font-weight: 500;
@@ -373,10 +405,14 @@ body .main__container__third__submit > div input {
   height: 43px;
   padding-left: 16px;
   font-size: 0.9rem;
-  font-size: 16px;
+  font-size: 15.5px;
   letter-spacing: -0.3px;
   border: solid 1px #c4dae7;
   border-radius: 7px 0px 0 7px;
+  color: #919BA7;
+  font-family: "Inter", sans-serif;
+}
+body .main__container__third__submit > div input::placeholder {
   color: #919BA7;
 }
 @media screen and (max-width: 920px) {
@@ -386,19 +422,20 @@ body .main__container__third__submit > div input {
 }
 @media screen and (max-width: 425px) {
   body .main__container__third__submit > div input {
-    width: 42.5px;
+    height: 42.7px;
   }
 }
 body .main__container__third__submit > div button {
   padding: 12px 18px;
   max-width: 88px;
   height: 46px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   color: #FFFFFF;
   background: #437EF7;
   border-radius: 0px 6px 6px 0px;
   border: none;
+  font-family: "Inter", sans-serif;
 }
 body .main__container__third__submit span {
   font-weight: 400;
@@ -406,6 +443,11 @@ body .main__container__third__submit span {
   letter-spacing: -0.1px;
   color: #B1CCFB;
   padding-top: 8px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__third__submit span {
+    padding-top: 9px;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .main__container__third {
@@ -418,9 +460,14 @@ body .main__container__third__submit span {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 767px) {
+  body .main__container__third {
+    padding: 64px 32px;
+  }
+}
 @media screen and (max-width: 425px) {
   body .main__container__third {
-    padding: 48px 16px;
+    padding: 50px 16px;
   }
 }
 body .main__container__fourth {
@@ -429,6 +476,7 @@ body .main__container__fourth {
   flex-direction: column;
   justify-content: center;
   gap: 64px;
+  background-color: #fff;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   body .main__container__fourth {
@@ -468,6 +516,12 @@ body .main__container__fourth__cards img {
     width: 100%;
   }
 }
+@media screen and (max-width: 425px) {
+  body .main__container__fourth__cards img {
+    margin-top: 1px;
+    margin-bottom: 9.5px;
+  }
+}
 body .main__container__fourth__cards span {
   font-weight: 500;
   font-size: 14px;
@@ -481,8 +535,13 @@ body .main__container__fourth__cards h3 {
   letter-spacing: -0.01em;
   color: #272D37;
   margin-top: 9px;
-  line-height: 29px;
+  line-height: 30px;
   margin-bottom: 17px;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__fourth__cards h3 {
+    margin-top: 10px;
+  }
 }
 body .main__container__fourth__cards a {
   text-decoration: none;
@@ -493,6 +552,13 @@ body .main__container__fourth__cards a {
 }
 body .main__container__fourth__cards a img {
   margin: 3px 0px 2px 8px;
+}
+@media screen and (max-width: 767px) {
+  body .main__container__fourth__cards a img {
+    width: 14px;
+    height: 12px;
+    margin: 3px 0px 3px 10px;
+  }
 }
 @media screen and (max-width: 1440px) {
   body .main__container__fourth__cards {
@@ -524,6 +590,12 @@ body .main__container__fifth h5 {
   color: #fff;
   font-size: 14px;
   margin: 3px 0px;
+  font-weight: 500;
+}
+@media screen and (max-width: 425px) {
+  body .main__container__fifth h5 {
+    margin: 0px;
+  }
 }
 body .main__container__fifth h1 {
   font-weight: 600;
@@ -573,6 +645,11 @@ body .main__container__fifth button {
   body .main__container__fifth {
     padding: 64px 60px;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .main__container__fifth {
+    padding: 64px 32px;
   }
 }
 @media screen and (max-width: 425px) {
