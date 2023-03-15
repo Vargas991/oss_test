@@ -134,9 +134,10 @@ body .header__container__login p {
   color: #437EF7;
 }
 body .header__container__login button {
-  padding: 12px 20px;
+  padding: 12px 19px;
   height: 46px;
   background: #437EF7;
+  font-family: "Inter", sans-serif;
   border-radius: 6px;
   border: none;
   color: white;
@@ -147,7 +148,7 @@ body .main__container__first {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 75px 30px 93px;
+  padding: 75px 30px 94px;
   max-width: 1280px;
   margin: auto;
 }
@@ -163,7 +164,7 @@ body .main__container__first {
 }
 body .main__container__first h5 {
   color: #437EF7;
-  font-size: 14px;
+  font-size: 13.8px;
   margin-top: 6px;
   margin-bottom: 22px;
 }
@@ -173,7 +174,7 @@ body .main__container__first h1 {
   line-height: 60px;
   text-align: center;
   letter-spacing: -0.01em;
-  max-width: 580px;
+  max-width: 570px;
   color: #272D37;
   margin-top: -4px;
 }
@@ -190,7 +191,7 @@ body .main__container__first h1 {
   }
 }
 body .main__container__first h1 span {
-  margin-left: -10px;
+  margin-left: -11px;
 }
 body .main__container__second {
   padding: 64px 112px;
@@ -674,7 +675,7 @@ body .footer__container__logo__list strong {
   color: #F9F9F9;
 }
 body .footer__container__logo__list ul {
-  margin-top: 24px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -709,7 +710,7 @@ body .footer__container__end {
   justify-content: center;
 }
 body .footer__container__end p {
-  margin-top: 1.8rem;
+  margin-top: 1.9rem;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
