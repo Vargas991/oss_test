@@ -1150,6 +1150,22 @@ height: 244px;
 @include mq(768px){
     flex-wrap: wrap;
     height: auto;
+    gap: 20px;
+} 
+
+@include mq(768px){
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+} 
+
+@include mq(477px){
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 20px;
 } 
 
     }
@@ -1163,6 +1179,8 @@ height: 244px;
                 width: 100%;
                 margin-bottom: 2rem;
             } 
+
+            
             &-logo{
                 margin-left: 0.3rem;
             }
@@ -1256,6 +1274,13 @@ height: 244px;
 
 
     &__list{
+
+        @include mq(477px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
         span{
             font-family: 'Inter';
             font-style: normal;
@@ -1284,12 +1309,18 @@ height: 244px;
                 font-size: 16px;
                 line-height: 24px;
                 /* identical to box height, or 150% */
-
+                
                 letter-spacing: -0.1px;
 
                 /* Neutral/800 */
 
                 color: #A5ACBA;
+
+                @include mq(477px){
+                    text-align: center;
+                    line-height: 15px;
+
+                } 
             }
         }
     }
