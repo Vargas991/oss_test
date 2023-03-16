@@ -836,7 +836,7 @@ a {
         &-info {
             display: flex;
             padding: 64px 32px;
-
+            // width: 420px;
             @include mq(768px) {
                 flex-direction: column;
                 gap: 30px;
@@ -851,13 +851,8 @@ a {
                 padding: 48px 16px;
             }
 
-            // justify-content: space-between;
             .infologo {
-                // flex-basis: 10%;
-                // min-width: 990px;
-                // width: 100%;
-                // margin-right: 180px;
-
+                width: 417px;
                 @include mq(768px) {
                     width: 100%;
                     margin-bottom: 3rem;
@@ -866,7 +861,7 @@ a {
                 .img {
                     width: 160px;
                     padding-left: 5px;
-                    padding-top: 5px;
+                    padding-top: 8px;
                 }
 
                 .description {
@@ -885,6 +880,9 @@ a {
 
                     @include mq(768px) {
                         width: 80%;
+                    }
+                    @include mq(425px) {
+                        width: 100%;
                     }
                 }
 

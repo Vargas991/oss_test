@@ -673,6 +673,9 @@ a {
     padding: 48px 16px;
   }
 }
+.footer__content-info .infologo {
+  width: 417px;
+}
 @media all and (max-width: 768px) {
   .footer__content-info .infologo {
     width: 100%;
@@ -682,7 +685,7 @@ a {
 .footer__content-info .infologo .img {
   width: 160px;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 .footer__content-info .infologo .description {
   font-style: normal;
@@ -698,6 +701,11 @@ a {
 @media all and (max-width: 768px) {
   .footer__content-info .infologo .description {
     width: 80%;
+  }
+}
+@media all and (max-width: 425px) {
+  .footer__content-info .infologo .description {
+    width: 100%;
   }
 }
 .footer__content-info .infologo .input-text {
