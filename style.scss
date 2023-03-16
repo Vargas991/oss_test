@@ -473,9 +473,12 @@ a {
         &-form{
             display: flex;
             flex-direction: column;
+            // align-items: flex-start;
             // padding: 0px;
             gap: 8px;
-            max-width: 440px;
+            margin-top: 5.5px;
+            max-width: 439px;
+            width: 80%;
             
             @include mq(768px){
                 width: 100%;
@@ -486,11 +489,11 @@ a {
                 margin-top: -1px;
                 position: relative;
                 left: -1px;
-                // max-width: 476px;
-
+                max-width: 700px;
+                // width: 80%;
                 input[type="text"] {
 
-
+                    width: 100%;
                     background: white;
                     // max-width: 352px;
                     @include mq(768px){
@@ -507,7 +510,7 @@ a {
                     }
                     height: 46px;
                     padding-left: 16px;
-                    margin-left: 1rem;
+                    // margin-left: 1rem;
                     font-size: 0.9rem;
                     border: solid 1px  #c4dae7;
                     border-radius: 6px 0px 0px 6px;

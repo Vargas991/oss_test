@@ -407,7 +407,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 440px;
+  margin-top: 5.5px;
+  max-width: 439px;
+  width: 80%;
 }
 @media all and (max-width: 768px) {
   .subscription__content-form {
@@ -419,12 +421,13 @@ a {
   margin-top: -1px;
   position: relative;
   left: -1px;
+  max-width: 700px;
 }
 .subscription__content-form .button input[type=text] {
+  width: 100%;
   background: white;
   height: 46px;
   padding-left: 16px;
-  margin-left: 1rem;
   font-size: 0.9rem;
   border: solid 1px #c4dae7;
   border-radius: 6px 0px 0px 6px;
