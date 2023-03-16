@@ -673,9 +673,10 @@ a {
     padding: 48px 16px;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
   .footer__content-info .infologo {
-    width: unset;
+    width: 100%;
+    margin-bottom: 3rem;
   }
 }
 .footer__content-info .infologo .img {
@@ -694,12 +695,18 @@ a {
   color: #A5ACBA;
   margin-top: 20.5px;
 }
+@media all and (max-width: 768px) {
+  .footer__content-info .infologo .description {
+    width: 80%;
+  }
+}
 .footer__content-info .infologo .input-text {
   display: flex;
   margin-top: -1px;
   position: relative;
   left: -1px;
   margin-top: 15px;
+  max-width: 700px;
 }
 .footer__content-info .infologo .input-text input[type=text] {
   background: #2C3444;
@@ -708,7 +715,7 @@ a {
   border-radius: 6px 0px 0px 6px;
   padding: 15px 44px 15px 16px;
   gap: 8px;
-  width: 80%;
+  width: 100%;
 }
 .footer__content-info .infologo .input-text input[type=text]::placeholder {
   font-style: normal;
@@ -748,7 +755,14 @@ a {
   .footer__content-info .infomenu {
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 20px;
+  }
+}
+@media all and (max-width: 477px) {
+  .footer__content-info .infomenu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 .footer__content-info .infomenu__item {
@@ -783,11 +797,25 @@ a {
   color: #A5ACBA;
   margin-bottom: 12.5px;
 }
+@media all and (max-width: 477px) {
+  .footer__content-info .infomenu__item a {
+    text-align: center;
+    line-height: 15px;
+  }
+}
 .footer__content-info .infomenu__item .link {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   margin-top: -1.5px;
+}
+@media all and (max-width: 768px) {
+  .footer__content-info .infomenu__item .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height, or 150% */
+  }
 }
 .footer__content-rigthautor {
   border-top: 1px solid #2E3545;
@@ -800,7 +828,7 @@ a {
   letter-spacing: -0.1px;
   /* Neutral/800 */
   color: #A5ACBA;
-  padding: 20.5px 0px;
+  padding: 20.5px 0px 65px;
 }
 
 /*# sourceMappingURL=style.css.map */
